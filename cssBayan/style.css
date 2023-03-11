@@ -30,12 +30,6 @@ body {
 .page__items {
   cursor: pointer;
 }
-.page__item {
-}
-.item {
-}
-.item__label {
-}
 .item__input {
   display: none;
 }
@@ -70,7 +64,6 @@ img {
   transition: all 0.3s ease-in-out 0s;
   transform: scale(0);
 }
-
 .item__input:checked + .item__title p {
   color: #3a3a3a;
 }
