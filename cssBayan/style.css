@@ -1,3 +1,50 @@
-label input:checked ~ div {
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #0e0e0e;
+}
+.page {
+  padding: 20px 0px;
+}
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 0px 20px 0px;
+}
+.page__items {
+}
+.page__item {
+}
+.item-bayan {
+}
+.item-bayan__label {
+}
+.item-bayan__input {
   display: none;
+}
+.item-bayan__input:checked ~ .item-bayan__img {
+  display: block;
+}
+.item-bayan__title {
+  display: block;
+  padding: 10px 0px;
+  border-top: 2px solid rgb(90, 85, 85);
+}
+.item-bayan__img {
+  display: none;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
 }
