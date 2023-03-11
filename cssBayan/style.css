@@ -27,6 +27,7 @@ body {
   font-size: 50px;
   margin: 0px 0px 20px 0px;
 }
+
 .page__items {
   cursor: pointer;
 }
@@ -90,4 +91,14 @@ img {
 .page__item:hover .item__img {
   height: 500px;
   margin: 0px 0px 20px 0px;
+}
+
+.page__item:active {
+  opacity: 0.8;
+}
+.page__item:active .item__title p {
+  color: blue;
+}
+.page__item:active .item__title .item__btn {
+  color: blue;
 }
