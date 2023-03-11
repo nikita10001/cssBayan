@@ -5,23 +5,25 @@ h3 {
   padding: 0;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.3;
   color: #0e0e0e;
+  background-color: #eeeeee;
+  font-weight: 700;
 }
 .page {
   padding: 20px 0px;
 }
 .container {
-  max-width: 1080px;
+  max-width: 1000px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .page__title {
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 900;
+  font-size: 50px;
   margin: 0px 0px 20px 0px;
 }
 .page__items {
@@ -40,8 +42,8 @@ body {
 }
 .item-bayan__title {
   display: block;
-  padding: 10px 0px;
-  border-top: 2px solid rgb(90, 85, 85);
+  padding: 15px 0px;
+  border-top: 2px solid rgb(217, 217, 217);
 }
 .item-bayan__img {
   display: none;
