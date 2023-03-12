@@ -1,0 +1,156 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.2;
+  color: #3a3a3a;
+  background-color: #eeeeee;
+}
+.page {
+  padding: 1.25rem 0rem;
+}
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.page__title {
+  font-weight: 800;
+  margin: 0rem 0rem 1.25rem 0rem;
+}
+
+.page__items {
+  cursor: pointer;
+}
+.item__input {
+  display: none;
+}
+.item__title {
+  cursor: pointer;
+  padding: 0.625rem 0rem;
+  border-top: 0.0625rem solid rgb(217, 217, 217);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item__title p {
+  color: rgb(0, 0, 255);
+  transition: all 0.2s ease 0s;
+}
+.item__btn {
+  padding: 0rem 0.625rem;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.item__img {
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 0;
+  height: 100%;
+  transition: all 0.4s ease-in-out 0s;
+}
+.item__img img {
+  display: inline-block;
+  transition: all 0.4s ease-in-out 0s;
+  transform: scale(0);
+  max-width: 31.25rem;
+  width: 100%;
+}
+.item__input:checked + .item__title p {
+  color: #3a3a3a;
+}
+.item__input:checked + .item__title .item__btn {
+  transform: rotate(45deg);
+}
+.item__input:checked ~ .item__img img {
+  transform: scale(1);
+}
+.item__input:checked ~ .item__img {
+  max-height: 31.25rem;
+  margin: 0rem 0rem 1.25rem 0rem;
+}
+
+/* no hover on mobile */
+@media (hover: hover) {
+  .page__items:hover .item__title p {
+    color: #3a3a3a;
+  }
+  .page__items:hover .item__btn {
+    opacity: 1;
+  }
+
+  .page__item:hover .item__img img {
+    transform: scale(1);
+  }
+  .page__item:hover .item__img {
+    max-height: 31.25rem;
+    margin: 0rem 0rem 1.25rem 0rem;
+  }
+  .item__btn {
+    opacity: 0;
+  }
+}
+/* onClick element */
+.page__item:active {
+  opacity: 0.8;
+}
+.page__item:active .item__title p {
+  color: blue;
+}
+.page__item:active .item__btn svg path {
+  fill: rgb(0, 0, 255);
+}
+/* fonts adaptive */
+
+@media (min-width: 320px) {
+  body {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+  .container {
+    max-width: 89%;
+  }
+  .page__title {
+    font-size: 1.56rem;
+    font-weight: 700;
+    margin: 0rem 0rem 0.625rem 0rem;
+  }
+  .item__btn {
+    width: 0.975rem;
+  }
+}
+@media (min-width: 820px) {
+  body {
+    font-size: 1.35rem;
+  }
+  .container {
+    max-width: 68%;
+  }
+  .page__title {
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  .item__btn {
+    width: 1.1875rem;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.75rem;
+  }
+  .container {
+    max-width: 60%;
+  }
+  .page__title {
+    font-size: 2.5rem;
+  }
+  .item__btn {
+    width: 1.4375rem;
+  }
+}
