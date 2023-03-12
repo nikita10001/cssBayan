@@ -45,10 +45,8 @@ body {
 }
 .item__btn {
   padding: 0px 10px;
-  font-size: 40px;
-  font-weight: 900;
   opacity: 1;
-  line-height: 1;
+  width: 19px;
   transition: all 0.3s ease 0s;
 }
 .item__img {
@@ -59,7 +57,8 @@ body {
   height: 100%;
   transition: all 0.4s ease-in-out 0s;
 }
-img {
+.item__img img {
+  display: inline-block;
   transition: all 0.4s ease-in-out 0s;
   transform: scale(0);
   max-width: 500px;
@@ -87,6 +86,7 @@ img {
   .page__items:hover .item__btn {
     opacity: 1;
   }
+
   .page__item:hover .item__img img {
     transform: scale(1);
   }
@@ -98,15 +98,15 @@ img {
     opacity: 0;
   }
 }
-
+/* onClick element */
 .page__item:active {
   opacity: 0.8;
 }
 .page__item:active .item__title p {
   color: blue;
 }
-.page__item:active .item__title .item__btn {
-  color: blue;
+.page__items:active .item__btn svg path {
+  fill: rgb(0, 0, 255);
 }
 /* fonts adaptive */
 
@@ -122,8 +122,7 @@ img {
   }
 
   .item__btn {
-    font-size: 30px;
-    font-weight: 700;
+    width: 15px;
   }
 }
 @media (min-width: 820px) {
@@ -137,8 +136,7 @@ img {
     font-size: 20px;
   }
   .item__btn {
-    font-size: 35px;
-    font-weight: 800;
+    width: 19px;
   }
 }
 @media (min-width: 1920px) {
@@ -147,5 +145,8 @@ img {
   }
   .page__title {
     font-size: 40px;
+  }
+  .item__btn {
+    width: 23px;
   }
 }
