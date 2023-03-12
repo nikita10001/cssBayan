@@ -12,17 +12,15 @@ body {
   background-color: #eeeeee;
 }
 .page {
-  padding: 20px 0px;
+  padding: 1.25rem 0rem;
 }
 .container {
-  max-width: 950px;
-  padding: 0 15px;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 .page__title {
   font-weight: 800;
-  font-size: 40px;
-  margin: 0px 0px 20px 0px;
+  margin: 0rem 0rem 1.25rem 0rem;
 }
 
 .page__items {
@@ -33,8 +31,8 @@ body {
 }
 .item__title {
   cursor: pointer;
-  padding: 10px 0px;
-  border-top: 1px solid rgb(217, 217, 217);
+  padding: 0.625rem 0rem;
+  border-top: 0.0625rem solid rgb(217, 217, 217);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,9 +42,8 @@ body {
   transition: all 0.2s ease 0s;
 }
 .item__btn {
-  padding: 0px 10px;
+  padding: 0rem 0.625rem;
   opacity: 1;
-  width: 19px;
   transition: all 0.3s ease 0s;
 }
 .item__img {
@@ -61,7 +58,7 @@ body {
   display: inline-block;
   transition: all 0.4s ease-in-out 0s;
   transform: scale(0);
-  max-width: 500px;
+  max-width: 31.25rem;
   width: 100%;
 }
 .item__input:checked + .item__title p {
@@ -74,8 +71,8 @@ body {
   transform: scale(1);
 }
 .item__input:checked ~ .item__img {
-  max-height: 500px;
-  margin: 0px 0px 20px 0px;
+  max-height: 31.25rem;
+  margin: 0rem 0rem 1.25rem 0rem;
 }
 
 /* no hover on mobile */
@@ -91,8 +88,8 @@ body {
     transform: scale(1);
   }
   .page__item:hover .item__img {
-    max-height: 500px;
-    margin: 0px 0px 20px 0px;
+    max-height: 31.25rem;
+    margin: 0rem 0rem 1.25rem 0rem;
   }
   .item__btn {
     opacity: 0;
@@ -113,40 +110,48 @@ body {
 @media (min-width: 320px) {
   body {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  .container {
+    max-width: 89%;
   }
   .page__title {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 700;
-    margin: 0px 0px 10px 0px;
+    margin: 0rem 0rem 0.625rem 0rem;
   }
 
   .item__btn {
-    width: 15px;
+    width: 0.975rem;
   }
 }
 @media (min-width: 820px) {
+  body {
+    font-size: 1.35rem;
+  }
+  .container {
+    max-width: 68%;
+  }
   .page__title {
     font-weight: 700;
-    font-size: 35px;
-    margin: 0px 0px 15px 0px;
-  }
-
-  body {
-    font-size: 20px;
+    font-size: 2.1rem;
+    margin: 0rem 0rem 1rem 0rem;
   }
   .item__btn {
-    width: 19px;
+    width: 1.1875rem;
   }
 }
 @media (min-width: 1920px) {
   body {
-    font-size: 28px;
+    font-size: 1.75rem;
+  }
+  .container {
+    max-width: 60%;
   }
   .page__title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .item__btn {
-    width: 23px;
+    width: 1.4375rem;
   }
 }
